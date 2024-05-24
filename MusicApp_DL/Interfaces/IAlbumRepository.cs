@@ -3,11 +3,11 @@ using MusicApp_Models.Models;
 
 namespace MusicApp_DL.Interfaces
 {
-	public interface ISongRepository
+	public interface IAlbumRepository
 	{
-        List<Song> GetAll();
-		Song GetById(Guid id);
-		void Add(Song song);
+		List<Album> GetAll();
+		Album GetById(Guid id);
+		void Add(Album album);
 		void Delete(Guid id);
 	}
 }
