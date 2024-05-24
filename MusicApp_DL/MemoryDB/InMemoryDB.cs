@@ -59,19 +59,19 @@ namespace MusicApp_DL.MemoryDB
 		{
 			new Album()
 			{
-				Id = 21,
+				Id = new Guid(),
 				Title = "Album 1",
 				ArtistName = "Weekend"
             },
 			new Album()
 			{
-				Id = 32,
+				Id = new Guid(),
 				Title = "Album 2",
 				ArtistName = "B.Poarch"
             },
 			new Album()
 			{
-				Id = 55,
+				Id = new Guid(),
 				Title = "Album 3",
 				ArtistName = "M.I.A."
             }
