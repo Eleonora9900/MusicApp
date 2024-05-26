@@ -107,6 +107,42 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "MusicApp_BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MusicApp_DL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MusicApp_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MusicApp_BL.dll": {}
+        }
+      },
+      "MusicApp_DL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MusicApp_Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MusicApp_DL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MusicApp_DL.dll": {}
+        }
+      },
+      "MusicApp_Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MusicApp_Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MusicApp_Models.dll": {}
+        }
       }
     }
   },
@@ -460,11 +496,27 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "MusicApp_BL/1.0.0": {
+      "type": "project",
+      "path": "../MusicApp_BL/MusicApp_BL.csproj",
+      "msbuildProject": "../MusicApp_BL/MusicApp_BL.csproj"
+    },
+    "MusicApp_DL/1.0.0": {
+      "type": "project",
+      "path": "../MusicApp_DL/MusicApp_DL.csproj",
+      "msbuildProject": "../MusicApp_DL/MusicApp_DL.csproj"
+    },
+    "MusicApp_Models/1.0.0": {
+      "type": "project",
+      "path": "../MusicApp_Models/MusicApp_Models.csproj",
+      "msbuildProject": "../MusicApp_Models/MusicApp_Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.18",
+      "MusicApp_BL >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -493,7 +545,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/eleonoragrozeva/Desktop/MusicApp/MusicApp_BL/MusicApp_BL.csproj": {
+              "projectPath": "/Users/eleonoragrozeva/Desktop/MusicApp/MusicApp_BL/MusicApp_BL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

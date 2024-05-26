@@ -1,6 +1,18 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using MusicApp_BL.Interfaces;
+using MusicApp_BL.Services;
+using MusicApp_DL.Interfaces;
+using MusicApp_DL.Repositories;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<ISongRepository, SongRepository>();
+builder.Services.AddSingleton<IArtistRepository, ArtistRepository>();
+builder.Services.AddSingleton<IAlbumRepository, AlbumRepository>();
+
+builder.Services.AddSingleton<ISongService, SongService>();
+builder.Services.AddSingleton<IAlbumService, AlbumService>();
+builder.Services.AddSingleton<IArtistService, ArtistService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -1,36 +1,37 @@
 ﻿using System;
 using MusicApp_BL.Interfaces;
+using MusicApp_DL.Interfaces;
 using MusicApp_Models.Models;
 
 namespace MusicApp_BL.Services
 {
 	public class ArtistService : IArtistService
 	{
-        private readonly IArtistService _artistService;
+        private readonly IArtistRepository _artistRepository;
 
-		public ArtistService(IArtistService artistService)
+		public ArtistService(IArtistRepository artistRepository)
 		{
-            _artistService = artistService;
+            _artistRepository = artistRepository;
 		}
 
         public void Add(Artist artist)
         {
-            _artistService.Add(artist);
+            _artistRepository.Add(artist);
         }
 
         public void Delete(int id)
         {
-            _artistService.Delete(id);
+            _artistRepository.Delete(id);
         }
 
         public List<Artist> GetAll()
         {
-            return _artistService.GetAll();
+            return _artistRepository.GetAll();
         }
 
         public Artist GetById(int id)
         {
-            return _artistService.GetById(id);
+            return _artistRepository.GetById(id);
         }
     }
 }
