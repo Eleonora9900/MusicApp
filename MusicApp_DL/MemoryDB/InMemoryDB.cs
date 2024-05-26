@@ -9,7 +9,7 @@ namespace MusicApp_DL.MemoryDB
 		{
 			new Song()
 			{
-				Id = Guid.NewGuid(),
+				Id = 11,
 				Title = "Song 1",
 				ArtistId = 1,
 				AlbumId = 21,
@@ -18,7 +18,7 @@ namespace MusicApp_DL.MemoryDB
 			},
 			new Song()
 			{
-				Id = Guid.NewGuid(),
+				Id = 12,
 				Title = "Song 2",
 				ArtistId = 2,
 				AlbumId = 32,
@@ -27,7 +27,7 @@ namespace MusicApp_DL.MemoryDB
 			},
 			new Song()
 			{
-				Id = Guid.NewGuid(),
+				Id = 13,
 				Title = "Song 3",
 				ArtistId = 3,
 				AlbumId = 55,
@@ -59,19 +59,19 @@ namespace MusicApp_DL.MemoryDB
 		{
 			new Album()
 			{
-				Id = new Guid(),
+				Id = 21,
 				Title = "Album 1",
 				ArtistName = "Weekend"
             },
 			new Album()
 			{
-				Id = new Guid(),
+				Id = 32,
 				Title = "Album 2",
 				ArtistName = "B.Poarch"
             },
 			new Album()
 			{
-				Id = new Guid(),
+				Id = 55,
 				Title = "Album 3",
 				ArtistName = "M.I.A."
             }

@@ -6,9 +6,9 @@ namespace MusicApp_DL.Interfaces
 	public interface IAlbumRepository
 	{
 		List<Album> GetAll();
-		Album GetById(Guid id);
+		Album GetById(int id);
 		void Add(Album album);
-		void Delete(Guid id);
+		void Delete(int id);
 	}
 }
 
