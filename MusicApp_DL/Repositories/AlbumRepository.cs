@@ -12,7 +12,7 @@ namespace MusicApp_DL.Repositories
             InMemoryDB.AlbumsData.Add(album);
         }
 
-        public void Delete(Guid id)
+        public void Delete(int id)
         {
             var album = GetById(id);
             if (album != null)
@@ -26,7 +26,7 @@ namespace MusicApp_DL.Repositories
             return InMemoryDB.AlbumsData;
         }
 
-        public Album GetById(Guid id)
+        public Album GetById(int id)
         {
             return InMemoryDB.AlbumsData.FirstOrDefault(album => album.Id == id);
         }
