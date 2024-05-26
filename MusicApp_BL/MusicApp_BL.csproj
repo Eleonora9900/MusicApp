@@ -14,4 +14,7 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MusicApp_DL\MusicApp_DL.csproj" />
+  </ItemGroup>
 </Project>
