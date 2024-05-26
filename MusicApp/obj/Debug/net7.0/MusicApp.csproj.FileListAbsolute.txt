@@ -31,3 +31,9 @@
 /Users/eleonoragrozeva/Desktop/MusicApp/MusicApp/obj/Debug/net7.0/MusicApp.pdb
 /Users/eleonoragrozeva/Desktop/MusicApp/MusicApp/obj/Debug/net7.0/MusicApp.genruntimeconfig.cache
 /Users/eleonoragrozeva/Desktop/MusicApp/MusicApp/obj/Debug/net7.0/ref/MusicApp.dll
+/Users/eleonoragrozeva/Desktop/MusicApp/MusicApp/bin/Debug/net7.0/MusicApp_BL.dll
+/Users/eleonoragrozeva/Desktop/MusicApp/MusicApp/bin/Debug/net7.0/MusicApp_DL.dll
+/Users/eleonoragrozeva/Desktop/MusicApp/MusicApp/bin/Debug/net7.0/MusicApp_Models.dll
+/Users/eleonoragrozeva/Desktop/MusicApp/MusicApp/bin/Debug/net7.0/MusicApp_BL.pdb
+/Users/eleonoragrozeva/Desktop/MusicApp/MusicApp/bin/Debug/net7.0/MusicApp_DL.pdb
+/Users/eleonoragrozeva/Desktop/MusicApp/MusicApp/bin/Debug/net7.0/MusicApp_Models.pdb
