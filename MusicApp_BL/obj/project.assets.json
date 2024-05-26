@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "MusicApp_DL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MusicApp_Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MusicApp_DL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MusicApp_DL.dll": {}
+        }
+      },
+      "MusicApp_Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MusicApp_Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MusicApp_Models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MusicApp_DL/1.0.0": {
+      "type": "project",
+      "path": "../MusicApp_DL/MusicApp_DL.csproj",
+      "msbuildProject": "../MusicApp_DL/MusicApp_DL.csproj"
+    },
+    "MusicApp_Models/1.0.0": {
+      "type": "project",
+      "path": "../MusicApp_Models/MusicApp_Models.csproj",
+      "msbuildProject": "../MusicApp_Models/MusicApp_Models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "MusicApp_DL >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/eleonoragrozeva/.nuget/packages/": {}
@@ -31,7 +68,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/eleonoragrozeva/Desktop/MusicApp/MusicApp_DL/MusicApp_DL.csproj": {
+              "projectPath": "/Users/eleonoragrozeva/Desktop/MusicApp/MusicApp_DL/MusicApp_DL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
