@@ -9,6 +9,7 @@ namespace MusicApp_BL.Interfaces
 		Song GetById(int id);
 		void AddSong(Song song);
 		void DeleteSong(int id);
+		List<Song> GetAllSongsByArtist(int artistId);
 	}
 }
 
