@@ -29,6 +29,11 @@ namespace MusicApp_BL.Services
             return _songRepository.GetAll();
         }
 
+        public List<Song> GetAllSongsByArtist(int artistId)
+        {
+            return _songRepository.GetAllSongsByArtist(artistId);
+        }
+
         public Song GetById(int id)
         {
             return _songRepository.GetById(id);

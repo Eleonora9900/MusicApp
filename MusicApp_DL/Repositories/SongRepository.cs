@@ -26,6 +26,11 @@ namespace MusicApp_DL.Repositories
             return InMemoryDB.SongsData;
         }
 
+        public List<Song> GetAllSongsByArtist(int artistId)
+        {
+            return InMemoryDB.SongsData.Where(song => song.ArtistId == artistId).ToList();
+        }
+
         public Song GetById(int id)
         {
             return InMemoryDB.SongsData.FirstOrDefault(song => song.Id == id);

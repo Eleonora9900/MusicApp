@@ -14,6 +14,8 @@ builder.Services.AddSingleton<ISongService, SongService>();
 builder.Services.AddSingleton<IAlbumService, AlbumService>();
 builder.Services.AddSingleton<IArtistService, ArtistService>();
 
+builder.Services.AddSingleton<IPlaylistService, PlayListService>();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
